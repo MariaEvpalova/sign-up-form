@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#left-section {
+    height: max-content;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    height: 100vh;
+    max-width: 34vw;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 auto;
+    background: rgba(0, 0, 0, .5);
+}
+
+#logo h1 {
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 5rem;
+}
+
+#logo img {
+    height: 144px;
+}
+
+#left-section  footer {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.8rem;
+}
+
+a {
+    color: inherit;
+}
