@@ -3,11 +3,10 @@
     src: url(Norse-Bold.otf);
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 body {
     margin: 0;
-    
+    display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -20,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto 100vh;
     height: 100vh;
-    max-width: 34vw;
+    min-width: 34vw;
     padding-top: 15vh;
     display: flex;
     flex-direction: column;
@@ -56,4 +55,34 @@ body {
 
 a {
     color: inherit;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+    background-color: #f9f9f9;
+}
+
+#right-section p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#right-section > * {
+    padding-left: 48px;
+}
+
+#right-section #upper {
+    padding-bottom: 42px;
+}
+
+#right-section form {
+    background-color: white;
+}
+
+form #inputs {
+    display: flex;
+    gap: 64px
 }

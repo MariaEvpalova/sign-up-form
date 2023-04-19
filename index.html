@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -17,6 +20,49 @@
         <footer>
             Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </footer>
+    </div>
+    <div id="right-section">
+        <div id="upper">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <form action="" method="post" id="form">
+            <p>Let's do this!</p>
+            <div id="inputs">
+                <div>
+                    <div>
+                        <label for="first_name">First name</label> <br>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="pwd">Password</label> <br>
+                        <input type="password" id="pwd" name="password">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="last_name">Last name</label> <br>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label> <br>
+                        <input type="number" id="phone" name="phone_number">
+                    </div>
+                    <div>
+                        <label for="re_pwd">Confirm password</label> <br>
+                        <input type="password" id="re_pwd" name="repeat_password">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div>
+            <button type="submit" form="form1" value="Submit">Create Account</button>
+            <p id="log_in">Already have an account? <button>Log in</button></p>
+        </div>
     </div>
 </body>
 </html>
