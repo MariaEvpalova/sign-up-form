@@ -89,7 +89,7 @@ form #inputs {
     gap: 64px
 }
 
-#inputs label {
+label {
     font-size: 0.8rem;
     font-weight: 600;
     color: #5c5c5c;
@@ -97,11 +97,26 @@ form #inputs {
     letter-spacing: .15rem;
 }
 
-#inputs input {
+input {
     border: #E5E7EB 1px solid;
     border-radius: 5px;
     padding: 6px;
     width: 256px;
+    appearance: none;
+}
+
+input:hover, input:focus {
+    background-color: #eee;
+}
+
+input.error {
+    border-color: #dd0000;
+}
+
+p#no_match {
+    margin-top: 1px;
+    font-size: 0.7rem;
+    color: #dd0000;
 }
 
 #inputs > div > div {
