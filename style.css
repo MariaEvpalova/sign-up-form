@@ -63,6 +63,7 @@ a {
     justify-content: center;
     flex-grow: 0;
     background-color: #f9f9f9;
+    --button-back-color: #596D48;
 }
 
 #right-section p {
@@ -80,9 +81,59 @@ a {
 
 #right-section form {
     background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
 }
 
 form #inputs {
     display: flex;
     gap: 64px
+}
+
+#inputs label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5c5c5c;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+}
+
+#inputs input {
+    border: #E5E7EB 1px solid;
+    border-radius: 5px;
+    padding: 6px;
+    width: 256px;
+}
+
+#inputs > div > div {
+    margin-bottom: 20px;
+}
+
+#inputs > div > div:last-child {
+    margin-bottom: 40px;
+}
+
+button[form="form1"] {
+    background-color: var(--button-back-color);
+    color: white;
+    border: none;
+    margin-top: 36px;
+    padding: 16px 58px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+p#login {
+    margin-top: 36px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#login button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--button-back-color);
+    font-weight: 700;
 }
